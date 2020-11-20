@@ -1,4 +1,3 @@
-{-# OPTIONS_GHC -Wall -Wno-missing-signatures -Wno-unused-top-binds #-}
 {-# LANGUAGE DataKinds #-}
 {-# LANGUAGE DerivingStrategies #-}
 {-# LANGUAGE FlexibleInstances #-}
