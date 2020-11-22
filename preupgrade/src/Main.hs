@@ -33,7 +33,7 @@ seedDatabase = do
     }
 
 -- before running: `createdb persist_ser`
--- run: `stack build && (stack run | friendly) && psql -d persist_ser -c 'select * from persist_ser;' -x`
+-- run: `stack build && stack run && psql -d persist_ser -c 'select * from persist_ser;' -x`
 main = do
   conn <- connectPostgreSQL "host=localhost port=5432 dbname=persist_ser"
   backend <- openSimpleConn mempty conn
