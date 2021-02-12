@@ -1,6 +1,8 @@
 resolver: lts-16.22
-packages: ['.']
+packages:
+  - '.'
+  - '../persistent/persistent'
+  - '../persistent/persistent-postgresql'
+  - '../persistent/persistent-template'
 extra-deps:
-- persistent-2.11.0.1
-- persistent-postgresql-2.11.0.0
-- persistent-template-2.9.1.0
+  - 'resourcet-pool-0.1.0.0'

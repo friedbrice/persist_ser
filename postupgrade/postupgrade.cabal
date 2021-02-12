@@ -1,0 +1,22 @@
+cabal-version: 1.12
+
+name:           postupgrade
+version:        0.0.0.0
+description:    Read database for Persistent 2.11 deserialization example
+build-type:     Simple
+
+executable persistent-serialization-exe
+  main-is: Main.hs
+  other-modules:
+      Lib
+  hs-source-dirs:
+      src
+  build-depends:
+      base
+    , bytestring
+    , persistent >= 2.11
+    , persistent-postgresql
+    , persistent-template
+    , postgresql-simple
+    , text
+  default-language: Haskell2010
